@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+
+<body>
+    <form>
+        <table align="center" width="500">
+            <caption>Registration form</caption>
+            <tr>
+                <td>User name</td>
+                <td>
+                    <input type="text" name="txtname" placeholder="max 10 chars only" autofocus required maxlength="10"
+                        size="20" pattern="[A-Z]">
+
+                </td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td>
+                    <input type="password" name="txtpassword" placeholder="password shouls be 4 to 15 chars" required
+                        pattern="[a-z A-Z 0-9]">
+                </td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td>
+                    <input type="number" name="txtage" min="15" max="30" value="2">
+                </td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>
+                    <input type="email" name="txtemail">
+                </td>
+            </tr>
+            <tr>
+                <td>Favorite color</td>
+                <td>
+                    <input type="color" name="txtcolor">
+                </td>
+            </tr>
+            <tr>
+                <td>Favarite cricketer name</td>
+                <td>
+                    <input type="text" list="players">
+                    <datalist id="players">
+                        <option>sachin</option>
+                        <option>dhoni</option>
+                        <option>dravid</option>
+                        <option>saurav</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td>Price range</td>
+                <td>
+                    <input type="range" name="txtprice">
+                </td>
+            </tr>
+            <tr>
+                <td>upload photo</td>
+                <td>
+                    <input type="file" name="txtfile">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register">
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>Drop list</td>
+                <td align="right">
+                    <div>
+                        <select size="2" multiple>
+                            <option value="value" disabled>Hyderabad</option>
+                            <option value="value">Chennai</option>
+                            <option selected>bangalore</option>
+                            <option>goa</option>
+
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Radio button</td>
+                <td>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>Gender</legend>
+                            <input type="radio" name="gender" value="male" checked>male
+                            <input type="radio" name="gender" value="female">female
+                        </fieldset>
+                    </form>
+                </div>
+            </td>
+            </tr>
+            <tr>
+                <td>checkbox button</td>
+                <td>
+                <div>
+                    <form>
+                        <fieldset>
+                            <legend>course</legend>
+                            <input type="checkbox" name="course" value="html" checked>html
+                            <input type="checkbox" name="course" value="javascript">javascript
+                        </fieldset>
+                        <br>
+                        <button>submit</button>
+                    </form>
+                </div>
+            </td>
+            </tr>
+            <tr>
+                <td>Progress and Meter</td>
+                <td>
+                    <form>
+                        <fieldset>
+                            <legend>Download progress</legend>
+                            <progress min="1" max="100" value="60"></progress>
+                        </fieldset>
+                        <fieldset>
+                            <legend>84% profile completed</legend>
+                            <meter min="1" max="100" value="84"></meter>
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>Textarea</td>
+                <td>
+                    <fieldset>
+                        <legend>license terms</legend>
+                        <textarea rows="4" cols="40" readonly>this is the home page to learn programming </textarea>
+                    </fieldset>
+                </td>
+            </tr>
+            <tr>
+                <td>buttons</td>
+                <td>
+                    <input type="button" name="print" value="button">
+                    <input type="submit" name="print" value="submit">
+                    <input type="reset" name="print" value="reset">
+                </td>
+            </tr>
+            <tr>
+                <td>Marquee</td>
+                <td>
+                    <marquee bgcolor="red" width="100%" height="100" loop="4" directon="right" scrollamout="10">hi! this is pranay</marquee>
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>

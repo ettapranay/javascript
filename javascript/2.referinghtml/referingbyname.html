@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload() {
+            var x = document.getElementsByName("pay");
+            alert("total no.of payment methods" + x.length)
+        }
+    </script>
+
+
+</head>
+
+<body onload="bodyload()">
+    <div>
+        <fieldset>
+            <legend>Payment methods</legend>
+            <input type="radio" name="pay">COD<br>
+            <input type="radio" name="pay">Credit card
+        </fieldset>
+        
+    </div>
+</body>
+
+</html>

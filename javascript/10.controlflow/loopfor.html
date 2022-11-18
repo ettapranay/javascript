@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkUser(){
+            var Users=[{Name:'john'},
+            {Name:'david'},
+            {Name:'Dhoni'},
+            {Name:'rohit'},
+        ]
+
+        var userName=document.getElementById("txtName").value;
+        var msg=document.getElementById("msg");
+
+        for(var i=0;i<Users.length;i++)
+        {
+            if(userName==Users[i].Name)
+            {
+                msg.innerHTML="username taken by another";
+                return;
+            }
+            else{
+                msg.innerHTML="Available";
+            }
+        }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>name</legend>
+            Username:
+            <input type="text" id="txtName" onkeyup="checkUser()">
+            <span id="msg"></span>
+        </fieldset>
+    </div>
+</body>
+</html>

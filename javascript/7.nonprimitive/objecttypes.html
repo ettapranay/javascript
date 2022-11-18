@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showproducts(){
+            var products=[
+                {Id:1,Name:"samsung tv",price:4500,photo:"../assets/logoA.png"},
+                {Id:2,Name:"iphone",price:80000,photo:"../assets/logoB.png"},
+                {Id:3,Name:"nike",price:3000,photo:"../assets/logoC.jpg"}
+            ];
+            var pic=document.getElementById("pic");
+            var txtRange=document.getElementById("txtRange");
+            var prodId=document.getElementById("prodId");
+            var prodName=document.getElementById("prodName");
+            var prodprice=document.getElementById("prodprice");
+
+            pic.src=products[txtRange.value].photo;
+            prodId.innerHTML=products[txtRange.value].Id;
+            prodName.innerHTML=products[txtRange.value].Name;
+            prodprice.innerHTML=products[txtRange.value].price;
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <table width="500" border="2" cellspacing="4" cellpadding="4" align="center">
+            <tr>
+                <td>
+                    <img src="" id="pic" width="200" height="200">
+                </td>
+            </tr>
+            <tr>
+                <td>productId</td>
+                <td id="prodId"></td>
+            </tr>
+            <tr>
+                <td>productName</td>
+                <td id="prodName"></td>
+            </tr>
+            <tr>
+                <td>productprice</td>
+                <td id="prodprice"></td>
+            </tr>
+        </table>
+        <div>
+            <input type="range" id="txtRange" min="0" max="3" value="0" onchange="showproducts()">
+        </div>
+    </div>
+</body>
+</html>

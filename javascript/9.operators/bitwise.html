@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function login(){
+            var Uname=document.getElementById("txtName").value;
+            var pwd=document.getElementById("txtPwd").value;
+
+            var msg=document.getElementById("msg").value;
+            var userDetails={userName:"john",password:"admin"};
+
+            (Uname==userDetails.userName && pwd==userDetails.password)?
+            document.write("login success"):msg.innerHTML="invalid username/password";
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>login</legend>
+            <dl>
+                <dt>UserName</dt>
+                <dd><input type="text" id="txtName"></dd>
+                <dt>Password</dt>
+                <dd><input type="password" id="txtPwd"></dd>
+                <br>
+                <input type="button" value="login" onclick="login()">
+            </dl>
+        </fieldset>
+        <div align="center">
+            <h2 id="msg"></h2>
+        </div>
+    </div>
+</body>
+</html>

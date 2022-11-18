@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function bodyload(){
+            document.getElementById("hi").src="a.png";
+            document.getElementById("txtregister").value="Register";
+        }
+    </script>
+
+</head>
+<body onload="bodyload()">
+    <div>
+        <img id="hi" width="300" height="300" border="1">
+    </div>
+    <div>
+        <form name="forms">
+            Name:<input type="text">
+                 <input id="txtregister" type="button">
+        </form>
+    </div>
+    
+</body>
+</html>
